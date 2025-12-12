@@ -1,7 +1,18 @@
-.card{
-    border-radius: 10px;
-    width: 18rem;
-    .car-tittle{
-        font-weight: 700;
-    }
+@import '../../../styles.scss';
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(115, 182, 103, 0.08);
+}
+
+.btn {
+  transition: 0.2s ease;
+  &:hover {
+    filter: brightness(0.35);
+  }
+}
+
+.btn-custom {
+  background-color: $mi-primario;
+  color: white;
 }
