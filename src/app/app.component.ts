@@ -5,11 +5,13 @@ import { Componente2Component } from './components/componente2/componente2.compo
 import { HomeComponent } from './components/home/home.component';
 import { PresentacionComponent } from "./components/presentacion/presentacion.component";
 import { Dia1212Component } from "./components/dia1212/dia1212.component";
+import { AntesdenavidadComponent } from "./antesdenavidad/antesdenavidad.component";
+import { NavbarComponent } from "./navbar/navbar.component";
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Componente1Component, Componente2Component, HomeComponent, PresentacionComponent, Dia1212Component],
+  imports: [RouterOutlet, Componente1Component, Componente2Component, HomeComponent, PresentacionComponent, Dia1212Component, AntesdenavidadComponent, NavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
