@@ -1,27 +1,102 @@
 
-<div class="hero d-flex align-items-center justify-content-center text-white text-center py-4">
-  <div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="#">Mi Proyecto</a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarMenu"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Proyecto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<section class="bg-dark text-white py-5">
+  <div class="container text-center">
     <h1 class="display-4 fw-bold mb-3">Bienvenido a la web</h1>
     <p class="lead mb-4">Este es un ejemplo de una sección tipo hero</p>
     <a href="#" class="btn btn-primary btn-lg">Empezar</a>
   </div>
+</section>
+
+
+<div class="container mt-5">
+  <div class="row text-center">
+    <div class="col">
+      <h2 class="text-primary mb-3">Bienvenidos al curso</h2>
+      <p class="lead">Aprenderemos Bootstrap dentro de Angular</p>
+      <button class="btn btn-outline-primary mt-2">Empezar</button>
+    </div>
+  </div>
 </div>
 
-<div class="container mt 4">
-        <h1 class="text-primary">Bienvenidos al curso</h1>
-        <p class="lead">Aprenderemos Boostrap dentro de angular</p>
-        <button class="btn btn-outline-primary">Empezar</button>
-</div>
-<div class="container mt-3">
-  <h2 class="text-center">Mi Proyecto</h2>
-  <p class="lead text-center">Un pequeño proyecto con Angular y Bootstrap</p>
-  <div class="d-flex justify-content-center mt-4">
-    <div class="card" >
-      <div class="card-body">
-        <h5 class="card-title">Introducción</h5>
-        <p class="card-text">Una breve descripción del proyecto.</p>
-        <button class="btn btn-primary">Ver</button>
+
+<div class="container mt-5 mb-5">
+  <h2 class="text-center mb-3">Mi Proyecto</h2>
+  <p class="lead text-center mb-5">
+    Un pequeño proyecto con Angular y Bootstrap
+  </p>
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Introducción</h5>
+          <p class="card-text">
+            Descripción general del proyecto y su estructura.
+          </p>
+          <button class="btn btn-primary">Ver</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Objetivos</h5>
+          <p class="card-text">
+            Qué se pretende aprender con este proyecto.
+          </p>
+          <button class="btn btn-primary">Ver</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Tecnologías</h5>
+          <p class="card-text">
+            Angular, Bootstrap y buenas prácticas de maquetación.
+          </p>
+          <button class="btn btn-primary">Ver</button>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+
+<footer class="bg-primary text-white text-center py-3">
+  <p class="mb-0">
+    © 2026 - Proyecto Angular con Bootstrap
+  </p>
+</footer>
