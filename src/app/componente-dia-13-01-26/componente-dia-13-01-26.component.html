@@ -1,0 +1,109 @@
+<div>
+    <div class="bg-black w-100 h-50 ms-3 mt-2">a</div>
+</div>
+
+<div>
+    <div class="text-truncate bg-warning-subtle" style="width: 150px;">Este texto es muy largo y se cortará</div>
+</div>
+
+
+<h1>Ejemplo:</h1>
+<div class="container py-4">
+
+  <h2 class="mb-4">DISPLAY BOOTSTRAP RESPONSIVE (2ºDAM)</h2>
+
+  <!-- SOLO MÓVIL -->
+  <h4>Visible SOLO en móvil</h4>
+  <div class="bg-danger text-white p-3 mb-3 d-block d-md-none">
+    SOLO MÓVIL
+  </div>
+
+  <!-- SOLO ESCRITORIO -->
+  <h4>Visible SOLO en escritorio</h4>
+  <div class="bg-success text-white p-3 mb-3 d-none d-md-block">
+    SOLO ESCRITORIO
+  </div>
+
+  <hr>
+
+  <!-- INLINE vs BLOCK RESPONSIVE -->
+  <h4>Inline en móvil / Block en escritorio</h4>
+  <div class="bg-primary text-white p-3 mb-2 d-inline d-md-block">
+    CAMBIA DE DISPLAY
+  </div>
+
+  <hr>
+
+  <!-- FLEX RESPONSIVE -->
+  <h4>Flex en escritorio / Block en móvil</h4>
+  <div class="d-block d-md-flex gap-2">
+    <div class="bg-info text-white p-3">ITEM 1</div>
+    <div class="bg-info text-white p-3">ITEM 2</div>
+    <div class="bg-info text-white p-3">ITEM 3</div>
+  </div>
+
+  <hr>
+
+  <!-- INLINE-FLEX RESPONSIVE -->
+  <h4>Inline-flex solo en escritorio</h4>
+  <div class="d-none d-md-inline-flex gap-2">
+    <div class="bg-secondary text-white p-3">A</div>
+    <div class="bg-secondary text-white p-3">B</div>
+  </div>
+
+  <div class="d-block d-md-none bg-warning text-dark p-3 mt-2">
+    En móvil NO es inline-flex
+  </div>
+
+</div>
+
+<h1>Ejemplo 2</h1>
+<!-- Banner -->
+<div class="banner bg-dark text-white py-5 text-sm-start text-lg-center text-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold shadow">Bienvenidos a Landing Boach</h1>
+        <p class="lead">Ejemplo de Bootstrap para 2º DAM</p>
+        <button class="btn btn-outline-light btn-lg mt-3">Comenzar</button>
+    </div>
+</div>
+
+<!-- Sección de Cards -->
+<div class="container my-5">
+    <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-12 col-md-4">
+            <div class="card h-100 shadow rounded-2">
+                <img src="https://picsum.photos/400/200?random=1" class="card-img-top img-fluid" alt="Producto 1">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Producto 1</h5>
+                    <p class="card-text">Descripción breve del producto 1.</p>
+                    <button class="btn btn-outline-primary btn-lg mt-auto">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-md-4">
+            <div class="card h-100 shadow rounded-2">
+                <img src="https://picsum.photos/400/200?random=2" class="card-img-top img-fluid" alt="Producto 2">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Producto 2</h5>
+                    <p class="card-text">Descripción breve del producto 2.</p>
+                    <button class="btn btn-outline-primary btn-lg mt-auto">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-md-4">
+            <div class="card h-100 shadow rounded-2">
+                <img src="https://picsum.photos/400/200?random=3" class="card-img-top img-fluid" alt="Producto 3">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Producto 3</h5>
+                    <p class="card-text">Descripción breve del producto 3.</p>
+                    <button class="btn btn-outline-primary btn-lg mt-auto">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

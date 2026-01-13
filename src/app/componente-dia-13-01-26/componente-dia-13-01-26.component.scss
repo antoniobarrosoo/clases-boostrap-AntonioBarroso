@@ -1,0 +1,32 @@
+/* Banner */
+.banner {
+    background-image: url('https://picsum.photos/1600/400');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+
+
+.banner button:hover {
+    filter: brightness(0.9);
+}
+/* Cards */
+.card {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-25px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn {
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    filter: brightness(0.9);
+}
