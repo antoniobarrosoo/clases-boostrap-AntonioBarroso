@@ -11,7 +11,7 @@ import { NavbarComponent } from "./navbar/navbar.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Componente1Component, Componente2Component, HomeComponent, PresentacionComponent, Dia1212Component, AntesdenavidadComponent, NavbarComponent],
+  imports: [RouterOutlet, NavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
