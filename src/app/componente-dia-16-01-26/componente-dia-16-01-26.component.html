@@ -1,0 +1,216 @@
+<head>
+  <title>TechNews Pro</title>
+</head>
+<body>
+
+<!-- NAVBAR CON DROPDOWN -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">TechNews Pro</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Categorías</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Frontend</a></li>
+            <li><a class="dropdown-item" href="#">Backend</a></li>
+            <li><a class="dropdown-item" href="#">Bases de datos</a></li>
+            <li><a class="dropdown-item" href="#">DevOps</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO / HEADER -->
+<header class="bg-primary text-light text-center py-5 mb-5">
+  <div class="container">
+    <h1 class="display-4">TechNews Pro</h1>
+    <p class="lead">Últimas noticias, tutoriales y artículos de tecnología</p>
+    <a href="#articles" class="btn btn-light btn-lg mt-3">Ver artículos</a>
+  </div>
+</header>
+
+<!-- CONTENIDO PRINCIPAL -->
+<div class="container mb-5">
+  <div class="row g-4">
+
+    <!-- MAIN: Artículos -->
+    <main class="col-12 col-xl-8" id="articles">
+
+      <!-- Alert importante -->
+      <div class="alert alert-info alert-dismissible fade show" role="alert">
+          Nuevo tutorial disponible: Aprende Bootstrap Grid + Angular.
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      </div>
+
+      <!-- Lista de artículos con cards y badges -->
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/200?random=1" class="card-img-top" alt="Artículo 1">
+            <div class="card-body">
+              <span class="badge bg-success mb-2">Frontend</span>
+              <h5 class="card-title">Angular 18: Novedades importantes</h5>
+              <p class="card-text">Descubre cómo Angular 18 mejora el rendimiento y la experiencia del desarrollador.</p>
+              <a href="#" class="btn btn-primary btn-sm">Leer más</a>
+            </div>
+            <div class="card-footer text-muted">
+              12 enero 2026 · 5 min lectura
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/200?random=1" class="card-img-top" alt="Artículo 2">
+            <div class="card-body">
+              <span class="badge bg-info mb-2">Maquetación</span>
+              <h5 class="card-title">Bootstrap Grid System avanzado</h5>
+              <p class="card-text">Aprende a construir layouts profesionales y responsivos combinando filas y columnas.</p>
+              <a href="#" class="btn btn-primary btn-sm">Leer más</a>
+            </div>
+            <div class="card-footer text-muted">
+              10 enero 2026 · 4 min lectura
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/200?random=1" class="card-img-top" alt="Artículo 3">
+            <div class="card-body">
+              <span class="badge bg-warning mb-2">Backend</span>
+              <h5 class="card-title">Buenas prácticas en desarrollo web</h5>
+              <p class="card-text">Tips profesionales que se aplican en proyectos reales de empresa.</p>
+              <a href="#" class="btn btn-primary btn-sm">Leer más</a>
+            </div>
+            <div class="card-footer text-muted">
+              8 enero 2026 · 6 min lectura
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/200?random=1" class="card-img-top" alt="Artículo 4">
+            <div class="card-body">
+              <span class="badge bg-danger mb-2">DevOps</span>
+              <h5 class="card-title">Introducción a Docker y CI/CD</h5>
+              <p class="card-text">Aprende a automatizar despliegues y a crear contenedores de forma profesional.</p>
+              <a href="#" class="btn btn-primary btn-sm">Leer más</a>
+            </div>
+            <div class="card-footer text-muted">
+              5 enero 2026 · 5 min lectura
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion FAQ -->
+      <div class="accordion mt-5" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              ¿Qué es Bootstrap?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Bootstrap es un framework CSS que facilita la creación de sitios responsivos y consistentes.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              ¿Qué es el Grid System?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              El Grid System permite organizar filas y columnas para construir layouts flexibles.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <nav aria-label="Page navigation example" class="mt-4">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled"><a class="page-link" href="#">Anterior</a></li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+        </ul>
+      </nav>
+
+    </main>
+
+    <!-- ASIDE: Sidebar con múltiples componentes -->
+    <aside class="col-12 col-xl-4">
+
+      <!-- Formulario de búsqueda -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Buscar artículos</h5>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Buscar...">
+            <button class="btn btn-primary" type="button">Buscar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lista de categorías -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Categorías</h5>
+          <div class="list-group list-group-flush">
+            <a href="#" class="list-group-item list-group-item-action active">Todas</a>
+            <a href="#" class="list-group-item list-group-item-action">Frontend</a>
+            <a href="#" class="list-group-item list-group-item-action">Backend</a>
+            <a href="#" class="list-group-item list-group-item-action">DevOps</a>
+            <a href="#" class="list-group-item list-group-item-action">Bases de datos</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Newsletter</h5>
+          <p class="small text-muted mb-2">Recibe las últimas noticias en tu correo</p>
+          <input type="email" class="form-control mb-2" placeholder="Email">
+          <button class="btn btn-success w-100">Suscribirse</button>
+        </div>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h6>Progreso de lectura</h6>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%"></div>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-light py-4">
+  <div class="container text-center">
+    &copy; 2026 TechNews Pro. Todos los derechos reservados.
+  </div>
+</footer>
+</body>
